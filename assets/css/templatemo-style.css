@@ -597,7 +597,7 @@ figure.snip1321:after {
 figure.snip1321:hover:after {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    opacity: 0.95;
+    opacity: 1;
 }
 
 /* Figcaption sits above the white panel (z-index: 1) */
@@ -631,17 +631,16 @@ figure.snip1321:hover figcaption {
 
 figure.snip1321 figcaption h4 {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #040f16;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 figure.snip1321 figcaption span {
     font-size: 13px;
-    font-style: italic;
     display: block;
-    color: #4a4a4a;
-    line-height: 1.5;
+    color: #2a2a2a;
+    line-height: 1.6;
 }
 
 figure.snip1321 i {
