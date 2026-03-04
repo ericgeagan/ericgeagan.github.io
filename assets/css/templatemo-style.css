@@ -504,9 +504,10 @@ section.my-work .section-heading {
 
 .isotope-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 240px);
     grid-template-rows: repeat(2, auto);
     gap: 30px;
+    justify-content: center;
 }
 
 .isotope-toolbar {
