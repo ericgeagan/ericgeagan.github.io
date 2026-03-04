@@ -600,7 +600,7 @@ figure.snip1321:hover:after {
     opacity: 1;
 }
 
-/* Figcaption sits above the white panel (z-index: 1) */
+/* Figcaption is the hover panel — background + text in one layer */
 figure.snip1321 figcaption {
     position: absolute;
     top: 0;
@@ -613,6 +613,7 @@ figure.snip1321 figcaption {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgba(232, 232, 232, 0.92);
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
     opacity: 0;
