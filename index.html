@@ -462,6 +462,12 @@ https://templatemo.com/tm-531-reflux
       };
 
       var checkSection = function checkSection() {
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 10) {
+          var $last = $(".section").last();
+          $("a").filter("[href*=\\#" + $last.data("section") + "]")
+            .closest("li").addClass("active").siblings().removeClass("active");
+          return;
+        }
         $(".section").each(function() {
           var $this = $(this),
             topEdge = $this.offset().top - 80,
