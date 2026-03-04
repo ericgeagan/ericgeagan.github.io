@@ -554,7 +554,7 @@ figure.snip1321 {
     margin: 0;
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    background-color: #e8e8e8;
     border-radius: 5px;
     /* REMOVED -webkit-perspective/perspective — was causing 3D flip that
        made the figcaption disappear behind a white plane on hover */
@@ -575,9 +575,9 @@ figure.snip1321 img {
     border-radius: 5px 5px 0 0;
 }
 
-/* White card panel that slides up on hover */
+/* Gray card panel that slides up on hover */
 figure.snip1321:after {
-    background-color: #ffffff;
+    background-color: #e8e8e8;
     position: absolute;
     content: "";
     display: block;
