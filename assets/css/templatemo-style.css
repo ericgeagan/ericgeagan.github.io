@@ -502,8 +502,10 @@ section.my-work .section-heading {
 }
 
 .isotope-box {
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .isotope-toolbar {
@@ -521,12 +523,10 @@ section.my-work .section-heading {
 }
 
 .isotope-item {
-    position: relative;
-    width: 48%;
-    margin: 1%;
-    border-bottom: 2px solid rgba(250,250,250,0.1);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    width: 30%;
+    min-width: 280px;
+    flex: 1 1 280px;
+    max-width: 380px;
 }
 
 .isotope-item img {
@@ -544,6 +544,36 @@ section.my-work .section-heading {
 .lazyloading {
     background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
     min-height: 60px;
+}
+
+.snip1321 {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+}
+
+.snip1321 img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.snip1321 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.snip1321:hover figcaption {
+  transform: translateY(0);
 }
 
 figure.snip1321 {
@@ -675,6 +705,26 @@ section.contact-me {
 
 #contact {
     text-align: center;
+}
+
+.section.my-services,
+.section.my-work,
+.section.contact-me {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section.my-services {
+  margin-bottom: 0;
+}
+
+.section.my-work {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section.contact-me {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1680px) {
