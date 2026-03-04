@@ -362,6 +362,8 @@ button:hover {
 
 /* Left & Right Post */
 
+.section-heading + .left-image-post,
+.section-heading + .right-image-post,
 .left-image-post + .right-image-post,
 .right-image-post + .left-image-post,
 .left-image-post + .left-image-post {
